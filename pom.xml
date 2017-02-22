@@ -159,8 +159,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>2.5</version>
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <executable><!--path-to-your-java8-home-directoru--></executable>
+                    <compilerVersion>1.8</compilerVersion>
                 </configuration>
             </plugin>
         </plugins>
@@ -173,5 +182,15 @@
         <url>https://github.com/PRIDE-Utilities/jmzIdentML.git</url>
         <tag>HEAD</tag>
     </scm>
+    <!-- The deployment maven repository-->
+
+    <repositories>
+        <repository>
+            <id>pst-release</id>
+            <name>EBI Nexus Repository</name>
+            <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
+        </repository>
+    </repositories>
+
 
 </project>

@@ -26,8 +26,6 @@ public class JmzIdentMLParser {
             System.out.println("mzIdentML file: " + file.getAbsolutePath());
 
             if (file != null) {
-
-
                 boolean aUseSpectrumCache = true;
 
                 long start = System.currentTimeMillis();
@@ -186,9 +184,6 @@ public class JmzIdentMLParser {
                     }
 
                 }
-
-
-
     */
 
             } else {
